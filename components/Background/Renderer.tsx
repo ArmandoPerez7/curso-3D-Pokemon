@@ -1,7 +1,8 @@
-import { WebGLRenderer } from "three";
-import Scene from "./scenes/Scene";
+import { WebGLRenderer } from "three"
+import Scene from "./scenes/Scene"
 
-export default class Renderer extends WebGLRenderer{
+
+export default class Renderer extends WebGLRenderer {
     constructor() {
         super({antialias: true, canvas: document.getElementById("bg")})
         this.config()
@@ -13,7 +14,5 @@ export default class Renderer extends WebGLRenderer{
         window.addEventListener("resize", this.resize)
     }
 
-    private resize() {
-        window.location.reload()
-    }
+    private resize = () => window.location.reload()
 }

@@ -15,7 +15,6 @@ export default class Skybox {
         const material2 = new MeshPhongMaterial({
             map: textura
         })
-        
         const skybox = new Mesh(Skygeometry, material2)
         skybox.material.side = BackSide
         scene.add(skybox)

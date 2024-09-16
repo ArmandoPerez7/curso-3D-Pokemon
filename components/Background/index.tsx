@@ -1,4 +1,4 @@
-import { Component, ReactNode } from "react";
+import { Component } from "react";
 import Renderer from "./Renderer";
 
 export default class Background extends Component {
